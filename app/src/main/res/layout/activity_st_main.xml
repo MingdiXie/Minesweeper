@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="csc207.gamecentre.slidingtiles.STGameActivity">
+
+	<csc207.gamecentre.general.GestureDetectGridView xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:id="@+id/grid"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_alignBottom="@+id/spinner2"
+		android:layout_alignParentStart="true"
+		android:layout_marginStart="0dp"
+		android:layout_marginBottom="43dp">
+
+	</csc207.gamecentre.general.GestureDetectGridView>
+
+	<Button
+		android:id="@+id/undo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginStart="0dp"
+		android:layout_marginBottom="0dp"
+		android:text="@string/undo"
+		android:textSize="10dp"/>
+
+	<Spinner
+		android:id="@+id/spinner2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@+id/undo"
+		android:layout_alignParentBottom="true"
+		android:layout_marginStart="14dp"
+		android:layout_marginTop="6dp"
+		android:layout_toEndOf="@+id/undo" />
+
+	<Button
+		android:id="@+id/leave"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginLeft="100dp"
+		android:layout_marginBottom="0dp"
+		android:text="@string/save_amp_leave"
+		android:textSize="10dp"/>
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="csc207.gamecentre.slidingtiles.STStartingActivity"
+    android:background="@drawable/gamecenterbackground">
+
+    <TextView
+        android:id="@+id/GameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="106dp"
+        android:gravity="center"
+        android:text="@string/sliding_tiles_description"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GameText"
+        android:layout_alignStart="@+id/STScoreboard"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="39dp"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:text="@string/new_game" />
+
+    <Button
+        android:id="@+id/LoadButton"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SaveButton"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="-210dp"
+        android:layout_toStartOf="@+id/StartButton"
+        android:background="@color/grey"
+        android:text="@string/load_saved_game" />
+
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GameText"
+
+        android:layout_marginStart="-209dp"
+        android:layout_marginTop="159dp"
+        android:layout_toEndOf="@+id/StartButton"
+        android:background="@color/grey"
+        android:text="@string/save_game" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/StartButton"
+        android:layout_alignEnd="@+id/StartButton"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/STScoreboard"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoadButton"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="87dp"
+        android:background="@color/lightblue"
+        android:gravity="center"
+        android:text="@string/sliding_tiles_scoreboard" />
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/back"
+        android:background="@color/lightb"/>
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/StartButton"
+        android:layout_alignEnd="@+id/STScoreboard"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="-2dp"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/SaveButton"
+        android:layout_alignBottom="@+id/spinner3"
+        android:text="@string/undo_step" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/SaveButton"
+        android:layout_alignTop="@+id/spinner"
+        android:text="@string/game_complexity" />
+
+
+
+
+</RelativeLayout>

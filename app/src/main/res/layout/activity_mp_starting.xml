@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="csc207.gamecentre.memorypuzzle.MPStartingActivity"
+    android:background="@drawable/gamecenterbackground">
+
+    <TextView
+        android:id="@+id/GameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="105dp"
+        android:gravity="center"
+        android:text="Welcome to Memory Puzzle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:text="@string/new_game" />
+
+    <Button
+        android:id="@+id/LoadButton"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SaveButton"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="-213dp"
+        android:layout_toStartOf="@+id/StartButton"
+        android:background="@color/grey"
+        android:text="@string/load_saved_game" />
+
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GameText"
+
+        android:layout_marginStart="-211dp"
+        android:layout_marginTop="125dp"
+        android:layout_toEndOf="@+id/StartButton"
+        android:background="@color/grey"
+        android:text="@string/save_game" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/MPScoreboard"
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoadButton"
+        android:layout_alignStart="@+id/LoadButton"
+        android:layout_alignEnd="@+id/LoadButton"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="3dp"
+        android:background="@color/lightblue"
+        android:gravity="center"
+        android:text="Memory Puzzle Scoreboard" />
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/back"
+        android:background="@color/lightb"/>
+
+</RelativeLayout>
+
